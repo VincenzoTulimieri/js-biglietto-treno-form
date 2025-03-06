@@ -11,6 +11,7 @@ const ticketElement = document.getElementById('ticket')
 
 formElement.addEventListener('submit', function (event) {
     event.preventDefault()
+
     //  dati utente appresi
     let age = ageElement.value;
     let numberKilo = parseInt(kmElement.value);
@@ -60,76 +61,17 @@ formElement.addEventListener('submit', function (event) {
     const offerElement = document.querySelector('.offer')
     offerElement.innerHTML += `<p class="text-dark">${offerPrint}</p>`
 
-
-
-
-
-
-
-
-
-
-
-
-    if (ticketElement.classList.contains('off')) {
-
-
-    } else {
-
-    }
-    ticketElement.classList.toggle('off')
-
-
-
-
-
+    const titleElement = document.querySelector('h2')
+    titleElement.classList.remove('hidden')
+    ticketElement.classList.remove('hidden')
 
 })
 
 // funzioni
 function number() {
-    return Math.floor(Math.random() * 5) + 1;
+    return Math.floor(Math.random() * 20) + 1;
 }
 function numberCode() {
     return Math.floor(Math.random() * 10000) + 1;
 }
 
-
-
-
-
-
-
-
-
-
-// const tasks = [nameElement.value, price];
-
-//     const parentElement = document.querySelector('.list');
-
-//     const listElement = document.createDocumentFragment(); 
-
-//     for (let i = 0; i < tasks.length; i++) {
-
-//         const task = tasks[i];
-//         console.log(task);
-
-//         const childElement = document.createElement('p');
-
-//         childElement.classList.add('text-dark');
-
-
-//         // childElement.innerText = task;
-//         // childElement.textContent = task;
-//         // childElement.innerHTML = task;
-//         childElement.append(task);
-//         // childElement.appendChild(task);
-//         console.log(childElement);
-
-//         listElement.appendChild(childElement);
-
-
-//     }
-
-//     console.log(listElement);
-//     parentElement.append(listElement);
