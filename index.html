@@ -26,18 +26,18 @@
                 <div class="row mb-5 text-center">
                     <div class="col-4 ">
                         <label for="name"><strong class="text-danger">nome e cognome</strong></label>
-                        <input type="text" id="name" class="form-control" placeholder="nome e cognome"
+                        <input required type="text" id="name" class="form-control" placeholder="nome e cognome"
                             aria-label="First name">
                     </div>
                     <div class="col-4">
                         <label for="age"><strong class="text-danger">km da percorrere</strong></label>
-                        <input type="number" id="km" class="form-control" placeholder="km da percorrere"
+                        <input required type="number" id="km" class="form-control" placeholder="km da percorrere"
                             aria-label="Last name">
                     </div>
                     <div class="col-4">
                         <label for="age"><strong class="text-danger">Fascia di età</strong></label>
-                        <select class="form-select" aria-label="Default select example" id="age">
-                            <option selected>seleziona la categoria</option>
+                        <select required class="form-select" aria-label="Default select example" id="age">
+                            <option selected value="">seleziona la categoria</option>
                             <option value="Minorenne">Minorenne</option>
                             <option value="Maggiorenne">Maggiorenne</option>
                             <option value="Over 65">Over 65</option>

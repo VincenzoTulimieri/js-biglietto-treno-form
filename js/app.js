@@ -11,13 +11,15 @@ const ticketElement = document.getElementById('ticket')
 
 formElement.addEventListener('submit', function (event) {
     event.preventDefault()
-
+    
     //  dati utente appresi
     let age = ageElement.value;
     let numberKilo = parseInt(kmElement.value);
+
     // calcolo del prezzo
     let price = numberKilo * 0.21;
-    // applicazione scnto
+
+    // applicazione sconto
     if (age === 'Minorenne') {
         priceUnder = ((price * 20) / 100);
     } else if (age === 'Over 65') {
@@ -29,7 +31,7 @@ formElement.addEventListener('submit', function (event) {
     price = price - priceUnder
     price = price.toFixed(2)
 
-    console.log(`il prezzo  biglietto è ${price} €`)
+    console.log(`il prezzo del biglietto è ${price} €`)
 
     // stampa nome su biglietto
     const nameTicketElement = document.querySelector('.name-ticket')
@@ -60,7 +62,8 @@ formElement.addEventListener('submit', function (event) {
     }
     const offerElement = document.querySelector('.offer')
     offerElement.innerHTML += `<p class="text-dark">${offerPrint}</p>`
-
+    
+    // apparizione in pagina del biglietto
     const titleElement = document.querySelector('h2')
     titleElement.classList.remove('hidden')
     ticketElement.classList.remove('hidden')
