@@ -50,7 +50,7 @@ formElement.addEventListener('submit', function (event) {
     priceElement.innerHTML += `<p class="text-dark">${price} €</p>`
 
     // stampa offerta sul biglietto
-    let offerPrint =''
+    let offerPrint = ''
     if (age === 'Minorenne') {
         offerPrint = 'Biglietto under 18'
     } else if (age === 'Over 65') {
