@@ -1,18 +1,38 @@
+/* utilities */
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/* debug */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* debug */
-body{
-    padding-top: 100px;
+header{
+    text-align: center;
 }
-
-
+h2{
+    text-align: center;
+}
 .container{
     width: 1000px;
     margin: 0 auto;
-    display: flex; 
     
 }
+
+
+.container-row{
+    background-color: blanchedalmond;
+    display: flex;
+}
+.container-name{
+    background-color: #757575;
+}
+
+
